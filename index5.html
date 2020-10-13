@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+<form action="">
+    <lable>
+        <h1>Xếp loại học sinh</h1>
+        <table>
+            <tr>
+                <td>
+                    <lable>Điểm 1 tiết</lable>
+                    <br>
+                    <input id="number1" type="number">
+                </td>
+                <td>
+                    <lable>Điểm giữa kì</lable>
+                    <br>
+                    <input id="number2" type="number" value="">
+                </td>
+                <td>
+                    <lable>Điểm cuối kì</lable>
+                    <br>
+                    <input id="number3" type="number" value="">
+                </td>
+                <td style="vertical-align: bottom">
+                    <button type="button" onclick="checkpoint()">Check</button>
+                </td>
+            </tr>
+        </table>
+        <p id="result"></p>
+    </lable>
+</form>
+<script>
+    function checkpoint() {
+
+        let a = +document.getElementById('number1').value;
+        let b = +document.getElementById('number2').value;
+        let c = +document.getElementById('number3').value;
+
+        let tb = (a + b * 2 + c * 3) / 6
+
+        if (tb < 3.5) {
+            document.getElementById('result').innerHTML = 'Học sinh loại E';
+        } else if (tb <= 4.5) {
+            document.getElementById('result').innerHTML = 'Học sinh loại D';
+        } else if (tb <= 6.0) {
+            document.getElementById('result').innerHTML = 'HỌc sinh loại C';
+        } else if (tb < 7.5) {
+            document.getElementById('result').innerHTML = 'HỌc sinh loại B';
+        } else {
+            document.getElementById('result').innerHTML = 'Học sinh loại A';
+        }
+    }
+</script>
+
+</body>
+</html>

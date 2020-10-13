@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            width: 60px;
+            height: 22px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <lable>
+        Nhập tuổi của học sinh:
+        <br>
+        <input id="number" type="number" value="">
+    </lable>
+    <button type="button" onclick="checkage()">Check</button>
+    <p id="result"></p>
+</form>
+
+<script>
+    function checkage() {
+        let a = +document.getElementById('number').value;
+
+        if (a < 15) {
+            document.getElementById('result').innerHTML = 'Học sinh chưa đủ tuổi học lớp 10';
+        } else {
+            document.getElementById('result').innerHTML = 'Học sinh đủ tuổi học lớp 10';
+        }
+    }
+</script>
+</body>
+</html>

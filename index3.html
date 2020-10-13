@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button {
+            width: 60px;
+            height: 22px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <lable>
+        Nhập số nguyên bất kì:
+        <br>
+        <input id="number" type="number" value="">
+    </lable>
+    <button type="button" onclick="checknumber()">Check</button>
+    <p id="result"></p>
+</form>
+</body>
+
+<script>
+    function checknumber(){
+        let a = +document.getElementById('number').value;
+        if (a < 0){
+            document.getElementById('result').innerHTML = 'Số a nhỏ hơn 0';
+        }else if (a > 0){
+            document.getElementById('result').innerHTML = 'Số a lớn hơn 0';
+        }else if (a == 0){
+            document.getElementById('result').innerHTML = 'Số a bằng 0';
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số tiền doanh số (triệu VNĐ): ");
+    let b;
+
+    if (a < 30) {
+        b = a * 8 / 100 + 6.5;
+        alert('Tiền lương nhận được là ' + b + ' triệu VNĐ.');
+    } else if (a <= 70) {
+        b = a * 10 / 100 + 6.5;
+        alert('Tiền lương nhận được là ' + b + ' triệu VNĐ.');
+    } else if (a <= 100) {
+        b = a * 12 / 100 + 6.5;
+        alert('Tiền lương nhận được là ' + b + ' triệu VNĐ.');
+    } else {
+        b = a * 15 / 100 + 6.5;
+        alert('Tiền lương nhận được là ' + b + ' triệu VNĐ.');
+    }
+</script>
+</body>
+</html>

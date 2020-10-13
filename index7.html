@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số phút đã sử dụng: ");
+    let b;
+    let c = 30;
+
+    if (a > 200) {
+        b = (a - 200) * 0.2 + 150 * 0.4 + 50 * 0.6 + 30;
+        alert('Tiền phí điện thoại là ' + b + ' nghìn VNĐ.');
+    } else if (a > 50) {
+        b = (a - 50) * 0.4 + 50 * 0.6 + 30;
+        alert('Tiền phí điện thoại là ' + b + ' nghìn VNĐ.');
+    } else {
+        b = a * 0.6 + 30;
+        alert('Tiền phí điện thoại là ' + b + ' nghìn VNĐ.');
+    }
+</script>
+</body>
+</html>
